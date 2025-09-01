@@ -1,0 +1,27 @@
+# Envs & caches
+.env
+.venv
+venv/
+__pycache__/
+*.pyc
+
+# Data (keep raw out of git)
+data/raw/
+data/**/*.xdf
+data/**/*.fif
+data/**/*.edf
+data/**/*.gdf
+data/**/*.mat
+data/**/*.set
+data/**/*.vhdr
+data/**/*.vmrk
+data/**/*.bdf
+fig/*.png
+fig/*.pdf
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db

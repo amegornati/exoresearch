@@ -1,0 +1,70 @@
+# BCI Starter
+
+> *“The first prototypes rarely look like destiny. They are small, imperfect windows into what will one day reshape humanity.”*  
+> — Alessandro Mariño El Gornati
+
+---
+
+## Project Objective
+
+This repository is my personal starting point in building toward **Exomind research** — the long-term pursuit of understanding and eventually digitizing aspects of human cognition and identity. Right now, the focus is narrow and practical:  
+- Learn how to record and process **non-invasive EEG** data  
+- Implement a simple **SSVEP (steady-state visual evoked potential)** demo with real-time decoding  
+- Establish a **weekly identity-probe routine** that could, one day, scale into more advanced models of cognition
+
+I’m an undergraduate researcher at the University at Albany, with parallel experience in **quantum photonics** and exploratory work in **AI/ML** labs. This repo is a personal training ground — not a finished product, but a foundation.
+
+---
+
+## Quick Start
+
+### Create environment (venv recommended)
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+pip install --upgrade pip
+pip install -r requirements.txt
+
+---
+
+**No-hardware demo**
+
+Open three terminals (with .venv active):
+
+Terminal A: synthetic EEG stream
+
+python code\sim_ssvep_lsl.py
+
+
+Terminal B: flicker stimulus + markers
+
+python -m stim.ssvep_stim
+
+
+Terminal C: real-time decoder
+
+python -m code.rt_ssvep_online
+
+
+Expected: Terminal C prints live “Decision: A | B | C | D…” while Terminal B shows flickering squares.
+
+Repository Layout
+code/        # decoders, simulators, loaders
+stim/        # stimulus presentation + LSL markers
+utils/       # lightweight helper modules (LSL, etc.)
+config/      # runtime config (frequencies, channels)
+data/raw/    # raw recordings (.xdf, .edf, .gdf) [gitignored]
+data/deriv/  # derived outputs (fif/csv/plots)
+notebooks/   # analysis notebooks (weekly probe, offline analysis)
+docs/        # how-tos (LabRecorder, data handling)
+notes/       # replication memos, logs
+fig/         # exported figures
+
+**Documentation**
+
+docs/labrecorder_walkthrough.md — record synchronized EEG + markers to .xdf
+docs/data_handling.md — conventions for raw vs. derived data, naming, backups
+
+**License**
+
+MIT License © 2025 Alessandro Marino

@@ -7,12 +7,12 @@
 
 ## Project Objective
 
-This repository is my personal starting point in building toward **Exomind research** — the long-term pursuit of understanding and eventually digitizing aspects of human cognition and identity. Right now, the focus is narrow and practical:  
-- Learn how to record and process **non-invasive EEG** data  
-- Implement a simple **SSVEP (steady-state visual evoked potential)** demo with real-time decoding  
+This repository is my personal starting point in building toward Exomind research — the long-term pursuit of understanding and eventually digitizing aspects of human cognition and identity. Right now, the focus is narrow and practical:  
+- Learn how to record and process non-invasive EEG data  
+- Implement a simple SSVEP (steady-state visual evoked potential) demo with real-time decoding  
 - Establish a **weekly identity-probe routine** that could, one day, scale into more advanced models of cognition
 
-I’m an undergraduate researcher at the University at Albany, with parallel experience in **quantum photonics** and exploratory work in **AI/ML** labs. This repo is a personal training ground — not a finished product, but a foundation.
+I’m an undergraduate researcher at the University at Albany, with parallel experience in quantum photonics and exploratory work in AI/ML (Computer Vision-focus) lab. This repo is a personal training ground — not a finished product, but a foundation.
 
 ---
 
